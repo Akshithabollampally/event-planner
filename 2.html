@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    
+    <title>INFINITE</title>
+    <link rel="stylesheet" href="2style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+  </head>
+  
+
+  <body>
+    <header>
+        <div class="event">
+      <h1>Welcome to Infinite Event Planner</h1>
+      <h2 style="font-family:Courier;"></h2>
+    </div>
+    </header>
+    <section class="loginbox">
+      <form id="box">
+        <div>
+          <label for="email">Email:</label><br><br>
+          <input type="text" id="email" class="box" placeholder="email" name="email">
+        </div>
+        <div>
+          <label for="password">Password:</label><br><br>
+          <input type="text" id="password" class="box" placeholder="password" name="password">
+        </div>
+        <button class="btn" type="button" onclick="signUp()">Sign up</button>
+        <button class="btn" type="button" onclick="signIn()">Sign in</button>
+      </form>
+    </section>
+
+  </body>
+
+  <script>
+    const firebaseConfig = {
+  //firebase config stuff
+  apiKey: "AIzaSyCmjXU1HKfr-L-G2ykmAg9JqjAjA_wJCuo",
+  authDomain: "event-planner-cb1c9.firebaseapp.com",
+  projectId: "event-planner-cb1c9",
+  storageBucket: "event-planner-cb1c9.appspot.com",
+  messagingSenderId: "980757157128",
+  appId: "1:980757157128:web:b39874748c0e9907a548bd",
+  measurementId: "G-H64NEL7B7Y"
+};
+// Initialize Firebase
+// firebase.initializeApp(firebaseConfig);
+const app = firebase.initializeApp(firebaseConfig);
+// const analytics = getAnalytics(app);
+const auth = firebase.auth();
+
+function signUp(){
+var email = document.getElementById("email");
+var password = document.getElementById("password");
+alert(email.value);
+const promise = auth.createUserWithEmailAndPassword(email.value, password.value);
+promise.then(u =>{
+alert("Signed Up");})
+promise.catch(e => alert(e.message));}
+
+function signIn()
+    {  
+      var email = document.getElementById("email");
+      var password = document.getElementById("password");
+      
+      const promise = auth.signInWithEmailAndPassword(email.value, password.value);
+      promise.then(u =>{
+        window.location.href="welcome.html";})
+      promise.catch(e => alert(e.message)); 
+    }
+
+    auth.onAuthStateChanged(function(user){
+      
+      if(user){
+        
+        var email = user.email;
+        alert("Active User " + email)
+        }
+        else
+      {
+        alert("No Active User");
+      }
+          
+    });
+  </script>
+<script src ="index.js"></script>
+</html>
+

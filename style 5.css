@@ -1,0 +1,33 @@
+body{
+    background-image: url(ur4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.yourevent input[type="submit"]
+{
+    
+    color:palevioletred;
+    top: 50%;
+    left: 5%;
+    width: 25%;
+    position: relative;
+    border-radius: 40px;
+    font-size: 35px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    background-color: peachpuff;
+    cursor: pointer;
+}
+.yourevent input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #b00a52;
+    color:#acdefc;
+}
+h1{
+    font-size: 100px;
+    font-style: italic;
+    color:rgb(241, 11, 157);
+    text-align: center;
+}

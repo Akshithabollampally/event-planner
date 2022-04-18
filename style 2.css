@@ -1,0 +1,121 @@
+body{
+    background-image: url("z.jpg");
+    background-repeat: no-repeat;
+    background-size: cover ;
+    
+
+}#welcome-tag{
+    color:rgb(20, 20, 20);
+    text-align: center;
+    font-style: italic;
+    font-size: 75px;
+}
+#xyz{
+    color: #232223;
+    text-align: center;
+    font-style: italic;
+    font-size: 50px;
+    text-align: bottom;
+}
+
+:root{
+    --main-color:rgb(126, 168, 188);
+}
+html{
+    font-size: 83%;
+    overflow-x:hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width:1rem;
+
+}
+
+.header{
+       position: fixed;
+       top: 0; left: 0; right: 0;
+       z-index: 10000;
+       background-color: rosybrown;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       padding: 1.5rem 9%;
+}
+.header .logo{
+    font-weight: bolder;
+    color: aliceblue;
+    font-size: 2.5rem;
+}
+.header .logo span{
+    color: var(--main-color);
+    font-style: italic;
+    
+}
+.header .navbar a{
+    font-size: 2rem;
+    color: rgb(255, 254, 255);
+    margin-right: 2rem;
+    
+}
+
+header.navbar a:hover{
+    color:var(--main-color);
+}
+#menu-bars{
+    font-size: 3rem;
+    color: beige;
+    border-radius: .5rem;
+    border: .1rem solid beige;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width:991px) {
+    html{
+        font-size: 55%;
+
+    }
+    
+}
+.header{
+    padding: 1.5em 2rem;
+}
+@media (max-width:768px) {
+    #menu-bars{
+        display: initial;
+    }.btn
+    {  
+    color:rgb(249, 245, 245);
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    background-color: #395461;
+    cursor: pointer;
+    }}
+.mak {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }

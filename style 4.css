@@ -1,0 +1,31 @@
+body{
+    background-image: url(plimg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.planevent input[type="submit"]
+{
+    top: 50%;
+    left: 5%;
+    width: 25%;
+    position: relative;
+    border-radius: 40px;
+    font-size: 35px;
+    margin: 10px 0;
+    border:none;
+    outline:none;
+    background: #82a9d7;
+    color:#fff;
+}
+.planevent input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #454ba7;
+    color:#9fd9e8;
+}
+h1{
+    font-size: 90px;
+    font-style: italic;
+    color: #540154;
+    text-align: center;
+}

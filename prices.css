@@ -1,0 +1,15 @@
+body{
+    background: url(f.jpg);
+}
+h1{
+    color: rgb(16, 0, 16);
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 96px;
+    text-decoration: dashed;
+}h2{
+    color: rgb(8, 8, 8);
+    text-align: center;
+    font-style: italic;
+    font-size: 65px;
+}

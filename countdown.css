@@ -1,0 +1,25 @@
+body{
+    background: url(timer1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#demo{
+    text-align: center;
+    font-size: 100px;
+    font-style: italic;
+    color:beige ;
+ }
+.lisa{
+    background-color: rgba(26, 103, 155, 0.7);
+    padding-top: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54%;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 10px;
+    padding-bottom: 60px;
+}     
+   

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+    <link rel="stylesheet" href="style 4.css">
+    <title>INFINITE EVENT PLANNER</title>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+ 
+</head>
+
+
+<body>
+    <div class="navbar">
+        <h1 class="b" id="user"></h1>
+        <button class="btn" onclick="openForm()">CREATE EVENT</button>
+        <button class="btn" onclick="logout()">Logout</button>
+        <button class="btn" id="lisa" onclick="lisa()">MY EVENTS</button>
+    </div>
+
+    <ul id="list">
+
+    </ul>
+
+   
+     <form id="usr">
+            <h1>CREATE A GROUP</h1>
+
+<section class="detbox">
+    <form id="box">
+        <div>
+            <label for="name"><b>EVENT NAME:</b></label><br>
+            <input type="radio text" placeholder="TYPE YOUR EVENT NAME" name="name" id="eventname" required class="box"><br>
+
+            <label for="number"><b>PHONE NUMBER:</b></label><br>
+            <input type="number" placeholder="Enter your phone number" name="NUMBER" id="number" required class="box"><br>
+            <label for="place"><b>LOCATION:</b></label><br>
+            <input type="radio text" placeholder="Enter Your Location" name="place" id="place" required class="box"><br>
+            <label for="date"><b>DATE:</b></label><br>
+            <input type="date" placeholder="Date of the event" name="date" id="date" required class="box"><br>
+            <label for="time"><b>TIME:</b></label><br>
+            <input type="time" placeholder="Time of the event" name="time" id="time" required class="box"><br>
+            <label for="groupid"><b>GROUP ID:</b></label><br>
+            <input type="groupid" placeholder="groupid" name="groupid" id="groupid" required class="box"><br>
+            <label for="password"><b>PASSWORD:</b></label><br>
+            <input type="password" placeholder="password" name="password" id="password" required class="box"><br>
+
+            <button type="submit" class="ctn">Create Group</button><br>
+            <button type="button" class="ctn cancel" onclick="closeForm()">Close</button>
+           </div>
+            </form>
+        </section>
+    </form>  
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyCmjXU1HKfr-L-G2ykmAg9JqjAjA_wJCuo",
+    authDomain: "event-planner-cb1c9.firebaseapp.com",
+    databaseURL: "https://event-planner-cb1c9-default-rtdb.firebaseio.com",
+    projectId: "event-planner-cb1c9",
+    storageBucket: "event-planner-cb1c9.appspot.com",
+    messagingSenderId: "980757157128",
+    appId: "1:980757157128:web:b39874748c0e9907a548bd",
+    measurementId: "G-H64NEL7B7Y"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+    <script src="new.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+body{
+    background: url(h.jpg);
+    background-size: 100%;
+}
+h1{
+    text-align: center;
+    color: rgb(128, 0, 98);
+    font-size: 45x;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.feed{  
+    color:rgb(249, 245, 245);
+    width: 50%;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 0px 0;
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #f6a4bb;
+ }
+ .bt{
+     color: #87adc4;
+     width: 34%;
+     border-radius: 20px;
+     font-size: 15px;
+     font-size: 15px;
+     padding: 20px;
+     margin: 0px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #f6a4bb;
+ }

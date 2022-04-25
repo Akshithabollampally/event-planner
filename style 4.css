@@ -1,0 +1,60 @@
+body{
+    background-image: url(e.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    font-size: 90px;
+    font-style: italic;
+    color: #540154;
+    text-align: center;
+} .detbox
+{
+  width: 300px;
+  box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+  background: rgb(100, 147, 155);
+  padding: 20px;
+  margin: 8% auto 0;
+  text-align: center;
+}
+.ctn
+{  
+color:rgb(252, 243, 249);
+width: 100%;
+padding: 10px;
+border-radius: 20px;
+font-size: 15px;
+margin: 10px 0;
+border: none;
+outline: none;
+cursor: pointer;
+background: #395461;
+  
+}
+
+
+form .create{
+    width: 98.5%;
+    height: 2.8em;
+    position: relative;
+    bottom: 10px;
+    border: 0;
+    border-radius: 10px;
+}
+.btn
+{  
+    color: bisque;
+    top: 50%;
+    left: 12%;
+    width: 25%;
+    position: relative;
+    border-radius: 40px;
+    font-size: 35px;
+    margin: 10px 0;
+padding: 10px;
+border: none;
+outline: none;
+background-color:palevioletred;
+cursor: pointer;
+}

@@ -1,0 +1,52 @@
+body{
+    background-image: url(d.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+h1{
+    font-size: 100px;
+    font-style: italic;
+    color:rgb(241, 11, 157);
+    text-align: center;
+}
+.bbox
+{
+  width: 350px;
+  box-shadow: 0 0 3px 0 peachpuff;
+  background:peachpuff;
+  padding: 18px;
+  margin: 0% auto 0;
+  left: 0%;
+  right: 100%;
+}
+.box
+{  
+color:rgb(249, 245, 245);
+width: 90%;
+padding: 10px;
+border-radius: 20px;
+font-size: 15px;
+margin: 8px 4px;
+border: none;
+outline: none;
+cursor: pointer;
+background: #c93776;
+  
+}.mon
+{  
+    color: bisque;
+    top: 50%;
+    left: 12%;
+    width: 25%;
+    position: relative;
+    border-radius: 40px;
+    font-size: 35px;
+    margin: 10px 0;
+padding: 10px;
+border: none;
+outline: none;
+background-color:palevioletred;
+cursor: pointer;
+}
